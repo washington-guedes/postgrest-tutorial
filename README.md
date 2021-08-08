@@ -2,9 +2,9 @@
 
 Learning purpose only.
 
-This repository follows intructions at: https://postgrest.org/en/stable/tutorials/tut0.html
+Playing with the postgrest tutorial found at: https://postgrest.org/en/stable/
 
-## History
+## Tutorial steps
 
 Most recent on top:
 
@@ -28,7 +28,7 @@ Most recent on top:
 - create /tutorial.conf file
 - run psql commands:
   - `\q` to quit
-  - run sql /scripts/...
+  - run sql scripts ..
 - dive in
   - `sudo docker exec -it postgrest-tutorial psql -U postgres`
 - install postgrest
@@ -38,3 +38,12 @@ Most recent on top:
   - `git clone https://github.com/PostgREST/postgrest.git`
 - install postgres
   - `sudo docker run --name postgrest-tutorial -p 5433:5432 -e POSTGRES_PASSWORD=admin -d postgres`
+
+## Twists
+
+Outside of the tutorial scope:
+
+- sql files folder structure
+- using comments to make github identify/count code as postgres sql
+  - https://github.com/github/linguist/pull/4887/files
+- Makefile commands

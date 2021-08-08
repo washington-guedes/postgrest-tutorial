@@ -1,0 +1,2 @@
+run:
+	postgrest ./tutorial.conf
