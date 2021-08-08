@@ -8,6 +8,10 @@ This repository follows intructions at: https://postgrest.org/en/stable/tutorial
 
 Most recent on top:
 
+- add a pre-request function `check_token`
+  - can be used to block JWT access
+- twist with the `exp` claim in the JWT token
+  - returns 401 with `{"message":"JWT expired"}` after expiration
 - make requests
   - /requests-examples.sh
 - sign a JWT token with `{"role": "todo_user"}`
