@@ -8,6 +8,14 @@ This repository follows intructions at: https://postgrest.org/en/stable/tutorial
 
 Most recent on top:
 
+- make requests
+  - /requests-examples.sh
+- sign a JWT token with `{"role": "todo_user"}`
+  - https://jwt.io/
+- define a secret for JWT
+  - /tutorial.conf
+- create a todo_user role
+  - /scripts/02.sql
 - as anonymous user
   - `curl http://127.0.0.1:3000/todos` works
   - `curl http://127.0.0.1:3000/todos -X POST -H "Content-Type: application/json" -d '{"task": "do bad thing"}` gives 401 unauthorized
